@@ -1,6 +1,6 @@
 <hr>
 <?php echo validation_errors(); ?>
-<form method="post" action="<?=base_url()?>Main_Controller/addProduct/" style="width: 600px; margin: auto">
+<form method="post" action="<?=base_url()?>main_controller/addProduct/" style="width: 600px; margin: auto">
     <h3>Добавить новый товар:</h3>
     <table>
         <tr><td colspan=>Бренд:

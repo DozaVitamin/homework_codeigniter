@@ -1,6 +1,6 @@
 <hr>
 <?php echo validation_errors(); ?>
-<form method="post" action="<?=base_url()?>Main_Controller/performUpdateProduct/" style="width: 600px; margin: auto">
+<form method="post" action="<?=base_url()?>main_controller/performUpdateProduct/" style="width: 600px; margin: auto">
     <h3>Изменить существующий товар:</h3>
     <input type="hidden" name="id" value="<?=$object->id?>">
     <table>

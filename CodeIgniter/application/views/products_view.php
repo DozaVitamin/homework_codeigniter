@@ -6,8 +6,8 @@
     <tr><td colspan="2">Описание: <?=$item->description?></td></tr>
     <tr><td colspan="2">Страна-производитель: <?=$item->country?></td></tr>
     <tr><td width="50%">Цена: <?=$item->price?></td><td>Категория: <?=$item->category?></td></tr>
-    <tr><td width="50%"><a href="<?=base_url()?>Main_Controller/updateProduct/<?=$item->identifier?>">Редактировать</a></td>
-        <td><a href="<?=base_url()?>Main_Controller/deleteProduct/<?=$item->identifier?>">Удалить</a></td></tr>
+    <tr><td width="50%"><a href="<?=base_url()?>main_controller/updateProduct/<?=$item->identifier?>">Редактировать</a></td>
+        <td><a href="<?=base_url()?>main_controller/deleteProduct/<?=$item->identifier?>">Удалить</a></td></tr>
 </table>
     <hr style="width: 800px;">
 <?php } ?>

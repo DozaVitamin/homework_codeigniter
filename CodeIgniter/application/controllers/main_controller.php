@@ -7,7 +7,7 @@ class Main_Controller extends CI_Controller
     public function index()
     {
         $products = $this->products_model->getAllProducts();
-
+        $this->load->view("head_view");
         $results = $this->products_model->fetchTables();
         $this->load->view("add_product_view", $results);
         $arrayToReturn = Array('array'=>$products);
@@ -40,6 +40,7 @@ class Main_Controller extends CI_Controller
     }
 
     public function updateProduct($id){
+        $this->load->view("head_view");
         $data = $this->products_model->fetchTables();
         $data['object'] = $this->products_model->getParticularProduct($id);
         $this->load->view('update_product_view', $data);
